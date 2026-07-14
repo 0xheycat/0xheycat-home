@@ -1,0 +1,356 @@
+# Instincts generated from https://github.com/0xheycat/0xheycat-home
+# Generated: 2026-07-14T21:44:57.855Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: 0xheycat-home-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: build 0xheycat personal dapp
+
+---
+id: 0xheycat-home-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Commit Length
+
+## Action
+
+Keep commit messages concise (~34 characters)
+
+## Evidence
+
+- Average commit message length: 34 chars
+- Based on 1 commits
+
+---
+id: 0xheycat-home-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: 0xheycat-home-import-alias
+trigger: "when importing modules"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Import Alias
+
+## Action
+
+Use path aliases (@/, ~/) instead of relative imports
+
+## Evidence
+
+- Import analysis shows alias pattern
+- Example: import { x } from '@/lib/x'
+
+---
+id: 0xheycat-home-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: 0xheycat-home-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: 0xheycat-home-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: 0xheycat-home-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: 0xheycat-home-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: 0xheycat-home-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: 0xheycat-home-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Import Style
+
+## Action
+
+Use alias import style
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: 0xheycat-home-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Export Style
+
+## Action
+
+Use mixed export style (both default and named exports as appropriate)
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: 0xheycat-home-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Commit Format
+
+## Action
+
+Use the conventional commit format with the 'feat' prefix for new features
+
+## Evidence
+
+- Seen in commit: 'feat: build 0xheycat personal dapp'
+- Pattern in commits.prefixes
+
+---
+id: 0xheycat-home-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Commit Length
+
+## Action
+
+Keep the commit message concise, around 34 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: 0xheycat-home-instinct-error-handling
+trigger: "When handling errors in code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Error Handling
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Pattern in errorHandling.style
+
+---
+id: 0xheycat-home-instinct-no-custom-error
+trigger: "When defining error handling logic"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct No Custom Error
+
+## Action
+
+Do not create custom error classes
+
+## Evidence
+
+- Pattern in errorHandling.customErrorClasses
+
+---
+id: 0xheycat-home-instinct-no-error-boundaries
+trigger: "When considering error boundaries in React components"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct No Error Boundaries
+
+## Action
+
+Do not implement error boundaries
+
+## Evidence
+
+- Pattern in errorHandling.errorBoundaries
+
+---
+id: 0xheycat-home-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: 0xheycat/0xheycat-home
+---
+
+# 0xheycat Home Instinct Test Location
+
+## Action
+
+Place test files in a separate folder from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+

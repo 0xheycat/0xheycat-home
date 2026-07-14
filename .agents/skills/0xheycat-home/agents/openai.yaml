@@ -1,0 +1,6 @@
+interface:
+  display_name: "0xheycat Home"
+  short_description: "Repo-specific patterns and workflows for 0xheycat-home"
+  default_prompt: "Use the 0xheycat-home repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
